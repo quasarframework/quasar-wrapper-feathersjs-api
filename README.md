@@ -20,7 +20,7 @@ Make sure you keep running your frontend Quasar app (from root project folder): 
 Then from the backend wrapper folder run the server-side app: `$ npm run dev`
 
 ## Building for production
-Build your frontend Quasar app (from root project folder): (`$ quasar build`).
+Build your frontend Quasar app (from root project folder): `$ quasar build`.
 
 Then from the backend wrapper folder build the server-side app: `$ npm run build`
 
