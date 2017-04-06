@@ -5,10 +5,12 @@
 
 **This is a work in progress, not ready for production use and not yet part of the official Quasar framework**.
 
-Although this wrapper is intended to be a standalone module it plays nice with the Quasar Feathers demo template https://github.com/claustres/quasar-templates/tree/feathers-api. To create your Quasar app starting from this template run: `quasar init claustres/quasar-templates#feathers-api <app-folder-name>`, then jump into your app folder.
+Although this wrapper is intended to be a standalone module it plays nice with the Quasar Feathers demo template https://github.com/claustres/quasar-templates/tree/feathers-api. To create your Quasar app starting from this template run: `quasar init @claustres/quasar-templates#feathers-api <app-folder-name>`, then jump into your app folder.
 
 ## Wrap your Quasar app
-From your root app dir: `$ quasar wrap api feathers`
+When integrated to Quasar from your root app dir you will have to run: `$ quasar wrap api feathers`
+
+**While it is a work in progress, you can wrap it from your root app dir using**: `quasar init @quasarframework/quasar-wrapper-feathers-api#dev api`
 
 Then from the backend wrapper folder called **api** install the server-side app dependencies: `$ npm install`
 
@@ -37,10 +39,10 @@ The key points are the following:
 - npm **prod** script runs the server in production mode and serve client production version with Feathers
 - **nodemon** is used as development dependency to watch changes in server side code and restart transpilation/server when required
 - server-side **debug** mode in node is activated by default for development
-- include a basic Feathers app structure/setup with models, services and hooks
-- include a basic Feathers datastore based on a local NeDB
-- include the Feathers authentication module
-- include a basic model (a chat message) as an example
+- include a basic Feathers app **structure/setup** with models, services and hooks
+- include a basic Feathers **datastore** based on a local NeDB
+- include the Feathers **authentication** module
+- include a basic **model** (a chat message) as an example
 
 ## License
 
