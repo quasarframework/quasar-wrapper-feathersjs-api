@@ -10,7 +10,7 @@ Although this wrapper is intended to be a standalone module it plays nice with t
 ## Wrap your Quasar app
 When integrated to Quasar from your root app dir you will have to run: `$ quasar wrap api feathers`
 
-**While it is a work in progress, you can wrap it from your root app dir using**: `quasar init @quasarframework/quasar-wrapper-feathers-api#dev api`
+**While it is a work in progress, you can wrap it from your root app dir using**: `quasar init @quasarframework/quasar-wrapper-feathersjs-api#dev api`
 
 Then from the backend wrapper folder called **api** install the server-side app dependencies: `$ npm install`
 
