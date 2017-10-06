@@ -18,8 +18,8 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "dev": "nodemon --watch src --watch config --ignore 'src/ssr/' --exec npm run debug",
-    "debug": "cross-env NODE_ENV=development node --inspect src/index.js",
+    "dev": "cross-env NODE_ENV=production nodemon --watch src --watch config --ignore 'src/ssr/' --exec npm run debug",
+    "debug": "node --inspect src/index.js",
     "test": "npm run eslint && npm run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "start": "node src/",
