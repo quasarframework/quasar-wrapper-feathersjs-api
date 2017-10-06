@@ -35,7 +35,7 @@ The key points are the following:
 - npm **prod** script runs the server in production mode and serve client production version with Feathers
 - **nodemon** is used as development dependency to watch changes in server side code and restart the server when required
 - server-side **debug** mode in node is activated by default for development
-- include a basic Feathers app **structure/setup** with models, services and hooks
+- include a basic Feathers app **structure/setup**. You can use the feathers cli to jumpstart your project.
 
 ## License
 
