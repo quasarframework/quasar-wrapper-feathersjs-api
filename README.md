@@ -15,8 +15,14 @@ When integrated to Quasar from your root app dir you will have to run: `$ quasar
 
 Then from the backend wrapper folder called **api** install the server-side app dependencies: `$ npm install`
 
+## Enable SSR
+In your config index.js file enable SSR
+```
+  renderSSR: true,
+```
+
 ## Running for development
-Make sure you keep running your frontend Quasar app (from root project folder): `$ quasar dev`
+Make sure you keep running your frontend Quasar app (from root project folder): `$ quasar dev`. Wait for the bundles to finish compiling.
 
 Then from the backend wrapper folder run the server-side app: `$ npm run dev`
 
