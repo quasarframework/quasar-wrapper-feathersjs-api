@@ -18,7 +18,7 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=production nodemon --watch src --watch config --ignore 'src/ssr/' --exec npm run debug",
+    "dev": "NODE_ENV=production; NODE_ENV=production nodemon --watch src --watch config --ignore 'src/ssr/' --exec npm run debug",
     "debug": "node --inspect src/index.js",
     "test": "npm run eslint && npm run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
@@ -39,11 +39,10 @@
     "feathers-socketio": "^2.0.0",
     "helmet": "^3.8.2",
     "serve-favicon": "^2.4.5",
-    "vue-server-renderer": "^2.3.4",
+    "vue-server-renderer": "~2.3.4",
     "winston": "^2.4.0"
   },
   "devDependencies": {
-    "cross-env": "^3.2.4",
     "eslint": "^4.8.0",
     "mocha": "^4.0.0",
     "nodemon": "^1.12.1",
