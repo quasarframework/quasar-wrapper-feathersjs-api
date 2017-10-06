@@ -23,7 +23,8 @@
     "test": "npm run eslint && npm run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "start": "node src/",
-    "mocha": "mocha test/ --recursive"
+    "mocha": "mocha test/ --recursive",
+    "prod": "cross-env NODE_ENV=production node src",
   },
   "dependencies": {
     "body-parser": "^1.18.2",
