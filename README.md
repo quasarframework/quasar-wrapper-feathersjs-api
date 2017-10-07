@@ -7,6 +7,8 @@
 
 Although this wrapper is intended to be a standalone module it plays nice with the Quasar Feathers demo template https://github.com/claustres/quasar-templates/tree/feathers-api. To create your Quasar app starting from this template run: `quasar init @claustres/quasar-templates#feathers-api <app-folder-name>`, then jump into your app folder.
 
+If you look for a template including Server-Side Rendering (SSR) use the [ssr branch](https://github.com/quasarframework/quasar-wrapper-feathersjs-api/tree/ssr) instead, which plays nice with the default Quasar template https://github.com/quasarframework/quasar-template-default.
+
 ## Wrap your Quasar app
 When integrated to Quasar from your root app dir you will have to run: `$ quasar wrap api feathers`
 
