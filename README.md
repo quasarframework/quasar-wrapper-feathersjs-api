@@ -2,6 +2,7 @@
 
 # Quasar Framework Feathers API Wrapper
 > Build full web apps with Quasar/Feathers as a frontend/backend solution.
+> Includes server side rendering for good SEO and inital page load speed
 
 **This is a work in progress, not ready for production use and not yet part of the official Quasar framework**.
 
@@ -14,38 +15,36 @@ When integrated to Quasar from your root app dir you will have to run: `$ quasar
 
 Then from the backend wrapper folder called **api** install the server-side app dependencies: `$ npm install`
 
+## Enable SSR
+In your config index.js file enable SSR
+```
+  renderSSR: true,
+```
+
 ## Running for development
-Make sure you keep running your frontend Quasar app (from root project folder): `$ quasar dev`
+Make sure you keep running your frontend Quasar app (from root project folder): `$ quasar build`. Wait for the bundles to finish compiling. Then `$ quasar dev`.
 
 Then from the backend wrapper folder run the server-side app: `$ npm run dev`
 
 ## Building for production
 Build your frontend Quasar app (from root project folder): `$ quasar build`.
 
-Then from the backend wrapper folder build the server-side app: `$ npm run build`
-
 ## Running in production
 From the backend wrapper folder run the server-side app: `$ npm run prod`
 
+__NOTE:__ Requires node version 6 and up
+
 # What exactly provides this wrapper ?
-> Mainly server-side code with babel integration to support ES2017.
 
 The key points are the following:
-- **src** directory host server-side code with a server entry point **main.js** that simply start a Feathers server
-- **babel CLI** is used as a development dependency to transpile server-side code
-- **dist** output directory is for transpiled backend files
-- npm **clean** script cleans up transpiled code
-- npm **dev** script runs the server in development mode on port 8081 by default (see **config** directory), client should be served as usual with Webpack
+- npm **dev** script runs the server in development mode on port 3030 by default (see **config** directory), client should be served as usual with Webpack
 - npm **prod** script runs the server in production mode and serve client production version with Feathers
-- **nodemon** is used as development dependency to watch changes in server side code and restart transpilation/server when required
+- **nodemon** is used as development dependency to watch changes in server side code and restart the server when required
 - server-side **debug** mode in node is activated by default for development
-- include a basic Feathers app **structure/setup** with models, services and hooks
-- include a basic Feathers **datastore** based on a local NeDB
-- include the Feathers **authentication** module
-- include a basic **model** (a chat message) as an example
+- include a basic Feathers app **structure/setup**. You can use the feathers cli to jumpstart your project.
 
 ## License
 
-Copyright (c) 2017 Luc Claustres
+Copyright (c) 2017 Jon Paul Miles
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
