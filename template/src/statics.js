@@ -17,7 +17,7 @@ module.exports = function() {
   app.use('/app(.*).css', (req, res, next) => 
     feathers.static(
       path.join(
-        app.get('public'), req.originalUrl
+        app.get('dist'), req.originalUrl
       )
     )(req, res, next)
   );
