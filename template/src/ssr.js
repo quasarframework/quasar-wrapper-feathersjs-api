@@ -41,11 +41,11 @@ module.exports = function() {
     throw new Error(`
       **compiled-ssr.js is missing.**
 
-      Please compile your ssr files using 'quasar dev' or 'quasar build' before running the server.
+      Please compile your ssr files by enabling 
 
-      Check your config settings if modified.
+      'renderSSR: true' in 'config/index.js' 
 
-      Compile to: ${rendererPath}
+      And run '$ quasar build' before running the server.
     `);
   }
 
