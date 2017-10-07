@@ -1,5 +1,4 @@
 const Vue = require('vue').default;
-const errors = require('feathers-errors')
 
 /**
  * Prepare mock browser so references to window, document, Element, and navigator don't break the SSR inside of Quasar
@@ -27,7 +26,7 @@ module.exports = function(context) {
   // no matched routes
   if (!matchedComponents.length) {
 
-    return Promise.reject(new errors.NotFound(`There are no vue components for this url: ${context.url}`));
+    return Promise.reject(`There are no vue components for this url: ${context.url}`);
   }
 
   // We wait for the "ssr" hook to finish it's promises before rendering. You can run an isomorphic ajax library such as axios or isomorphic-fetch in it. It should be a function You that returns a promise and when it resolves it will render the html. This allows you to fetch all your ajax data before the html is sent and save the results to a store
