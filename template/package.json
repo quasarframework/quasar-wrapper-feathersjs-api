@@ -22,7 +22,7 @@
     "debug": "NODE_ENV=production; NODE_ENV=production nodemon --watch src --watch config --ignore 'src/ssr/'  --exec npm run inspect",
     "inspect": "node --inspect-brk src/index.js",
     "test": "npm run eslint && npm run mocha",
-    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "eslint": "eslint src/. test/. --config .eslintrc.js",
     "start": "node src/",
     "mocha": "mocha test/ --recursive",
     "prod": "cross-env NODE_ENV=production node src"

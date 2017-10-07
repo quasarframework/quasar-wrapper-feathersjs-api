@@ -13,9 +13,8 @@ describe('Feathers application tests', () => {
   });
 
   it('starts and shows the index page', () => {
-    return rp('http://localhost:3030').then(body =>
-      assert.ok(body.indexOf('<html>') !== -1)
-    );
+    return rp('http://localhost:3030')
+      .then(body => assert.ok(body.indexOf('<html') !== -1));
   });
 
   describe('404', function() {
