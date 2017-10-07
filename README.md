@@ -22,7 +22,7 @@ In your config index.js file enable SSR
 ```
 
 ## Running for development
-Make sure you keep running your frontend Quasar app (from root project folder): `$ quasar dev`. Wait for the bundles to finish compiling.
+Make sure you keep running your frontend Quasar app (from root project folder): `$ quasar build`. Wait for the bundles to finish compiling. Then `$ quasar dev`.
 
 Then from the backend wrapper folder run the server-side app: `$ npm run dev`
 
