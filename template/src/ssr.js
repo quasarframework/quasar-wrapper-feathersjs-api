@@ -16,8 +16,7 @@ module.exports = function() {
   const app = this;
 
   const rendererPath = path.join( 
-    app.get('src'), 
-    'ssr', 
+    app.get('ssr'),
     'compiled-ssr.js' 
   );
   
