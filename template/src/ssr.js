@@ -30,11 +30,12 @@ function createRenderer (bundle, options) {
 module.exports = function() {
   const app = this;
 
-  const templatePath = path.join(app.get('src'), 'index.html');
-
-  let renderer, readyPromise;
+  let renderer, readyPromise, templatePath;
 
   if (isProd) {
+
+    templatePath = path.join(app.get('public'), 'index.template.html');
+
     const template = fs.readFileSync(templatePath, 'utf-8');
 
     const serverBundle = require(path.join( 
@@ -74,6 +75,8 @@ module.exports = function() {
     );
 
   } else {
+
+    templatePath = path.join(app.get('src'), 'index.html');
 
     app.use(favicon(path.join(app.get('src'), 'statics', 'favicon.ico')));
 
