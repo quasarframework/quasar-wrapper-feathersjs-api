@@ -25,7 +25,7 @@
     "eslint": "eslint src/. test/. --config .eslintrc.js",
     "start": "node src/",
     "mocha": "mocha test/ --recursive --timeout 20000",
-    "prod": "NODE_ENV=production node src"
+    "prod": "cross-env NODE_ENV=production && node src"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
