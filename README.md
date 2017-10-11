@@ -6,12 +6,12 @@
 
 **This is a work in progress, not ready for production use and not yet part of the official Quasar framework**.
 
-Although this wrapper is intended to be a standalone module it plays nice with the Quasar Feathers demo template https://github.com/claustres/quasar-templates/tree/feathers-api. To create your Quasar app starting from this template run: `quasar init @claustres/quasar-templates#feathers-api <app-folder-name>`, then jump into your app folder.
+Although this wrapper is intended to be a standalone module it plays nice with the Quasar Feathers SSR demo template https://github.com/claustres/quasar-templates/tree/feathers-api-ssr. To create your Quasar app starting from this template run: `quasar init @claustres/quasar-templates#feathers-api-ssr <app-folder-name>`, then jump into your app folder.
 
 ## Wrap your Quasar app
-When integrated to Quasar from your root app dir you will have to run: `$ quasar wrap api feathers`
+When integrated to Quasar from your root app dir you will have to run: `$ quasar wrap api feathers-ssr`
 
-**While it is a work in progress, you can wrap it from your root app dir using**: `quasar init @quasarframework/quasar-wrapper-feathersjs-api#dev api`
+**While it is a work in progress, you can wrap it from your root app dir using**: `quasar init @quasarframework/quasar-wrapper-feathersjs-api#ssr api`
 
 Then from the backend wrapper folder called **api** install the server-side app dependencies: `$ npm install`
 
