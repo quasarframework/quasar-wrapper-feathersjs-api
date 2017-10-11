@@ -1,3 +1,6 @@
+// Required to set this variable to set the quasar theme
+process.env.NODE_ENV = 'test';
+
 const assert = require('assert');
 const rp = require('request-promise');
 const app = require('../src/app');
