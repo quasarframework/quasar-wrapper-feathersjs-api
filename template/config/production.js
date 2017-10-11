@@ -1,5 +1,5 @@
 module.exports = {
   "host": "quasar-feathers-app.feathersjs.com",
-  "port": "PORT",
+  "port": process.env.PORT || 80,
   "public": "../../dist/",
 }

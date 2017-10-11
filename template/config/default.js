@@ -1,16 +1,14 @@
 const clientConfig = require('../../config');
-const path = require('path');
+const { get } = require('lodash');
 
 module.exports = {
   "client": clientConfig,
   "host": "localhost",
-  "port": 3030,
-  "public": "../../src/",
-  "dist": "../../dist/",
-  "ssr": path.join(
-    "../", 
-    clientConfig.ssrBuildOutputFolder || 'ssr/'
-  ),
+  "port": get(clientConfig, 'server.port') || 3030,
+  "public": "../../dist/",
+  "build": "../../build/",
+  "ssr": "../ssr/",
+  "src": "../../src/",
   "paginate": {
     "default": 10,
     "max": 50
